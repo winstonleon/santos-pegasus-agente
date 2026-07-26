@@ -63,7 +63,7 @@ flowchart TD
 ### Opción B: App web (Streamlit) en local
 
 ```bash
-git clone https://github.com/TU_USUARIO/santos-pegasus-agente.git
+git clone https://github.com/winstonleon/santos-pegasus-agente.git
 cd santos-pegasus-agente
 python3 -m venv venv
 source venv/bin/activate   # En Windows: venv\Scripts\activate
@@ -83,23 +83,44 @@ streamlit run app.py
 >
 > **Fuentes:** Guía Oficial de Ingeniería Back-end.pdf, Protocolo de Respuesta a Incidentes.pdf, Manual de Onboarding.pdf, Arquitectura de Microservicios.pdf
 
-**Pregunta:** _[completa con tu propio ejemplo — ej. protocolo ante incidentes]_
+**Pregunta:** ¿Qué pasos sigue un nuevo desarrollador en el proceso de onboarding?
 
 **Respuesta del agente:**
-> _[pega aquí la respuesta real que te dio el agente]_
 
-**Pregunta:** _[completa con un tercer ejemplo — ej. pasos del onboarding]_
+Según el contexto proporcionado, un nuevo desarrollador en Santo Pegasus Soluciones sigue los siguientes pasos:
+
+1. **Accesos y Cuentas (Día 1):** correo corporativo, Slack, acceso a GitHub.
+2. **Configuración del Entorno Local:** según el área (Back-end o Front-end).
+3. **Guía de Git y Flujo de Trabajo:** familiarización con las prácticas de la empresa.
+4. **Primeras Tareas Sugeridas (Plan 30/60/90 Días):** leer la Guía de Ingeniería correspondiente, resolver tickets `good-first-issue`, participar en Code Reviews como observador.
+5. **Checklist de Onboarding (Semana 1):** sesión de bienvenida con el Tech Lead, presentación al squad, pair programming con el buddy, acuerdo del Plan 30/60/90, página personal en Confluence.
+6. **Firma de Confirmación:** checklist firmado junto al Tech Lead y People Business Partner.
+7. **Cultura y Conocimiento**, y **Contactos Útiles** (Tech Leads por área).
+
+**Fuentes:** Manual de Onboarding para Nuevos Desarrolladores.pdf (páginas 0, 1, 19, 20, 27, 29, 33)
+
+---
+
+**Pregunta:** ¿Cuál es el protocolo a seguir ante un incidente de producción?
 
 **Respuesta del agente:**
-> _[pega aquí la respuesta real]_
+
+El protocolo se divide en varias fases:
+
+1. **Detección:** alertas automáticas en `#incidents` (Datadog, PagerDuty).
+2. **Declaración (T+0 a T+5 min):** el on-call publica el mensaje inicial; el Incident Commander (IC) asume el comando, declara la severidad, crea la War Room, asigna roles (Communications Lead, Technical Lead, SMEs) y abre el documento de timeline.
+3. **War Room y Diagnóstico:** el Technical Lead y los SMEs identifican la causa raíz y definen la mitigación.
+4. **Mitigación y Resolución:** se restaura el servicio.
+5. **Comunicación a Stakeholders:** se informa del impacto y las acciones tomadas.
+6. **Post-Mortem:** análisis posterior para documentar lecciones aprendidas y mejorar el protocolo.
+
+**Fuentes:** Protocolo de Respuesta a Incidentes y Post-Mortems.pdf (páginas 1, 2, 3, 9, 10, 17, 34), Manual de Onboarding.pdf (página 22)
 
 ## ☁️ Evidencia del deploy en OCI
 
 La aplicación está desplegada y corriendo en una instancia de OCI Compute (Ubuntu 24.04, Always Free tier):
 
-🔗 **URL pública:** `http://TU_IP_PUBLICA:8501`
-
-*(Reemplaza por tu IP pública real. Si usas una IP efímera, ten en cuenta que puede cambiar si reinicias la instancia — considera reservarla o actualizar este link antes de entregar.)*
+🔗 **URL pública:** `http://146.181.42.84:8501/`
 
 ![Captura del agente funcionando en OCI](docs/evidencia-deploy.png)
 
