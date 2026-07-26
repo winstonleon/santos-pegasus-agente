@@ -79,9 +79,12 @@ streamlit run app.py
 **Pregunta:** ¿Qué tecnologías se usan en el back-end según la guía oficial de ingeniería backend?
 
 **Respuesta del agente:**
-> Según la Guía Oficial de Ingeniería Back-end de Santo Pegasus Soluciones (versión 2.4.0), algunas de las tecnologías utilizadas en el back-end incluyen: Spring Boot Actuator y Micrometer para métricas, Prometheus como destino de exportación, Datadog para visualización y alerting, Spring Security con JWT/OAuth 2.0 para autenticación, mTLS para comunicación segura entre servicios, y HashiCorp Vault / AWS Secrets Manager / Google Cloud Secret Manager para gestión de secretos.
->
-> **Fuentes:** Guía Oficial de Ingeniería Back-end.pdf, Protocolo de Respuesta a Incidentes.pdf, Manual de Onboarding.pdf, Arquitectura de Microservicios.pdf
+
+Según la Guía Oficial de Ingeniería Back-end de Santo Pegasus Soluciones (versión 2.4.0), algunas de las tecnologías utilizadas en el back-end incluyen: Spring Boot Actuator y Micrometer para métricas, Prometheus como destino de exportación, Datadog para visualización y alerting, Spring Security con JWT/OAuth 2.0 para autenticación, mTLS para comunicación segura entre servicios, y HashiCorp Vault / AWS Secrets Manager / Google Cloud Secret Manager para gestión de secretos.
+
+**Fuentes:** Guía Oficial de Ingeniería Back-end.pdf, Protocolo de Respuesta a Incidentes.pdf, Manual de Onboarding.pdf, Arquitectura de Microservicios.pdf
+
+---
 
 **Pregunta:** ¿Qué pasos sigue un nuevo desarrollador en el proceso de onboarding?
 
