@@ -1,0 +1,6 @@
+streamlit
+langchain-core
+langchain-cohere
+langchain-chroma
+chromadb
+cohere
